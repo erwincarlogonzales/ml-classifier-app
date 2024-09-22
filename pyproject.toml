@@ -1,24 +1,28 @@
 [tool.poetry]
-name = "src"
-version = "0.1.0"
-description = ""
+name = "ml-classifier-app"
+version = "1.0.1"
+description = "streamlit app"
 authors = ["erwincarlogonzales <erwincarlogonzales@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-jupyter = "^1.1.1"
-ipython = "^8.27.0"
-pandas = "^2.2.3"
-numpy = "^2.1.1"
-matplotlib = "^3.9.2"
+jupyter = "^1.0.0"
+ipython = "^8.26.0"
+pandas = "^2.2.2"
+numpy = "2.0.0"
+matplotlib = "^3.9.1"
 seaborn = "^0.13.2"
-scikit-learn = "^1.5.2"
+scikit-learn = "^1.5.1"
 imblearn = "^0.0"
 lazypredict = "^0.2.12"
-streamlit = "^1.38.0"
-plotly = "^5.24.1"
+streamlit = "^1.37.0"
+plotly = "^5.23.0"
 joblib = "^1.4.2"
+lime = "^0.2.0.1"
+llvmlite = "^0.43.0"
+shap = "^0.46.0"
+
 
 [build-system]
 requires = ["poetry-core"]

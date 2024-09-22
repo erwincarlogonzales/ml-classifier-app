@@ -120,8 +120,8 @@ if st.button('Make Prediction ✨'):
         st.write(f'### Prediction: {result}')
         
         # Display SHAP force plot
-        st.write('### SHAP Force Plot:')
-        st_shap(shap.force_plot(explainer.expected_value[0], shap_values[0], input_df_transformed[0]))
+        # st.write('### SHAP Force Plot:')
+        # st_shap(shap.force_plot(explainer.expected_value[0], shap_values[0], input_df_transformed[0]))
         
         # Display LIME explanation
         st.write('### LIME Explanation:')
