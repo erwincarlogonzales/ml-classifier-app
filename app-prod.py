@@ -7,8 +7,8 @@ import lime
 from lime.lime_tabular import LimeTabularExplainer
 import config
 
-from scripts.preprocessing import create_preprocessing_pipeline
-from scripts.categorical_encoder import encode_categorical
+from src.preprocessing import create_preprocessing_pipeline
+from src.categorical_encoder import encode_categorical
 
 # Define st_shap to embed SHAP plots in Streamlit
 def st_shap(plot):
@@ -120,8 +120,8 @@ if st.button('Make Prediction ✨'):
         st.write(f'### Prediction: {result}')
         
         # Display SHAP force plot
-        # st.write('### SHAP Force Plot:')
-        # st_shap(shap.force_plot(explainer.expected_value[0], shap_values[0], input_df_transformed[0]))
+        st.write('### SHAP Force Plot:')
+        st_shap(shap.force_plot(explainer.expected_value[0], shap_values[0], input_df_transformed[0]))
         
         # Display LIME explanation
         st.write('### LIME Explanation:')
