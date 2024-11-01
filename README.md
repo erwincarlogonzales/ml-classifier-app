@@ -9,4 +9,5 @@
 6. create new notebook and from scripts.example_module import example_function
 7. run the code to test the imported function
 
+# **NOTE: This app is for a personal project only! Not an official prototype!**
 check out this app https://ml-classification-app.streamlit.app/
