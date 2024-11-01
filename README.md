@@ -8,3 +8,5 @@
 5. create example_module.py
 6. create new notebook and from scripts.example_module import example_function
 7. run the code to test the imported function
+
+check out this app https://ml-classification-app.streamlit.app/
